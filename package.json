@@ -1,0 +1,36 @@
+{
+  "name": "koa2-starter",
+  "version": "1.0.0",
+  "description": "A starter kit for node web apps based on koa2",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "koa2",
+    "node",
+    "es7"
+  ],
+  "author": "sohan.honavar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "faker": "^4.1.0",
+    "ioredis": "^3.2.2",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
